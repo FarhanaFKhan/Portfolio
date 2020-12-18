@@ -1,6 +1,59 @@
+body{
+    position: relative;
+}
+.hero-background{
+    background-image: linear-gradient(to right, rgb(228, 177, 221), rgb(31, 27, 31));
+}
+
+.nav-link.active {
+    color: black !important;
+  }
+
+.glow {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+ 
+#about{
+    display: flex;
+}  
 #about h2{
     margin: 20px 0px 0px 50px;
 }
 #about p{
     padding:50px;
+}
+
+.photo{
+    height:50%;
+    width:50%;
+    margin-top: 100px;
+
+}
+
+
+@keyframes hero{
+    from {margin-left: 0px;}
+    to {margin-left: 50px;}
+}
+
+@media (max-width:767px){
+    .photo{
+        height:100%;
+        width:100%;
+        margin-left: 100px;
+    }
 }
