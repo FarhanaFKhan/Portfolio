@@ -44,11 +44,20 @@ body{
 
 }
 
-
-@keyframes hero{
-    from {margin-left: 0px;}
-    to {margin-left: 50px;}
+#skills h2{
+  margin: 50px 0px 0px 50px;
 }
+#skills img{
+  height: 100px;
+  width: 100px; 
+  margin:50px 0px 0px 50px ;
+}
+
+#projects h2{
+  margin: 50px 0px 0px 50px;
+}
+
+
 
 @media (max-width:767px){
     .photo{
