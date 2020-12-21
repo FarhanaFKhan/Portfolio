@@ -1,8 +1,14 @@
 body{
     position: relative;
+    background-image: linear-gradient(to right, rgb(253, 253, 253), rgb(226, 219, 226));
 }
 .hero-background{
     background-image: linear-gradient(to right, rgb(228, 177, 221), rgb(31, 27, 31));
+    margin-top: 55px;
+}
+
+.navbar-brand{
+  color: white !important;
 }
 
 .nav-link.active {
@@ -29,9 +35,13 @@ body{
  
 #about{
     display: flex;
+    margin-top: 90px;
+    padding-bottom: 60px;
 }  
 #about h2{
-    margin: 20px 0px 0px 50px;
+    text-align: center;
+    margin: 70px 0px 0px 50px;
+    letter-spacing: 2px;
 }
 #about p{
     padding:50px;
@@ -44,19 +54,45 @@ body{
 
 }
 
+#skills{
+  margin-top: 100px;
+  margin-bottom: 20px;
+  padding-bottom: 50px;
+}
+
 #skills h2{
-  margin: 50px 0px 0px 50px;
+  text-align: center;
+  margin: 70px 0px 50px 50px;
+  letter-spacing: 2px;
 }
 #skills img{
-  height: 100px;
-  width: 100px; 
+  height: 80px;
+  width: 80px; 
   margin:50px 0px 0px 50px ;
 }
 
-#projects h2{
-  margin: 50px 0px 0px 50px;
+#projects{
+  margin-top: 120px;
 }
 
+#projects h2{
+  text-align: center;
+  margin: 60px 0px 0px 50px;
+  letter-spacing: 2px;
+}
+
+
+.project-modal{
+  margin:70px 0px 0px 50px ;
+}
+.project-modal img{
+  border: 1px solid black;
+  margin-top:10px;
+}
+ .project-modal p{
+   margin-top:10px;
+   margin-left:100px; 
+ }
 
 
 @media (max-width:767px){
