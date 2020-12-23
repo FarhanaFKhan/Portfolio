@@ -57,7 +57,8 @@ body{
 #skills{
   margin-top: 100px;
   margin-bottom: 20px;
-  padding-bottom: 50px;
+  padding-bottom: 90px;
+  margin-left: 170px
 }
 
 #skills h2{
@@ -72,27 +73,55 @@ body{
 }
 
 #projects{
-  margin-top: 120px;
+  /* margin-top: 100px; */
+  padding-top: 10px;
 }
 
 #projects h2{
-  text-align: center;
-  margin: 60px 0px 0px 50px;
+  /* text-align: center; */
+  margin: 50px 0px 0px 530px;
   letter-spacing: 2px;
 }
 
-
-.project-modal{
-  margin:70px 0px 0px 50px ;
+.project-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin:70px 0px 0px 0px ;
 }
-.project-modal img{
+
+
+.project-modal-one{
+  margin-top:50px;
+  
+}
+.project-modal-one img{
   border: 1px solid black;
   margin-top:10px;
 }
- .project-modal p{
-   margin-top:10px;
-   margin-left:100px; 
+
+.project-modal-one img:hover{
+  box-shadow: 10px 10px lightgrey;
+}
+
+.project-modal-one p{
+  margin-top:10px;
+  margin-left:100px; 
+}
+
+.modal-summary p{
+  margin-left: 0px;
+}
+ 
+ .modal-links{
+   display:flex;
+   justify-content: space-around;
  }
+ .modal-links a{
+  color:black;
+ }
+
 
 
 @media (max-width:767px){
@@ -101,4 +130,17 @@ body{
         width:100%;
         margin-left: 100px;
     }
+    .project-container{
+      display: block;
+      flex-direction: column;
+  }
+
 }
+/* @media (min-width:850px){
+    
+    
+  .project-container{
+      display: flex;
+      flex-direction: row;
+  }
+} */

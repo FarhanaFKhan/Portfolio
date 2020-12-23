@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <!--Bootstrap CSS tag-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
     <!--Own CSS-->
     <link rel="stylesheet" href="style.css" />
     
@@ -96,24 +97,33 @@
 
         <!--Projects Section-->
         <section id="projects">
-          <div class="row">
-          <div class="col-md-8"><h2>Projects</h2>
-            <p style="text-align: center; margin-top: 15px;">Click on the image to see the project description</p>
-            <div class="project-modal">
+          <h2>Projects</h2>
+          <p style="margin-left: 450px; margin-top: 15px;">Click on the image to see the project description</p>
+          <div class="project-container">
+            <div class="project-modal-one"><!--project directory-->
               <img class="img-fluid" src="./images/graduate-directory.png" data-bs-toggle="modal" data-bs-target="#exampleModal" alt="project 1 screencap" >
               <p><strong>CYF Graduate Directory</strong></p>
               
-
+        
             <!-- Modal -->
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
+              <div class="modal-dialog" style="margin-top:120px;">
                 <div class="modal-content">
                   <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">CYF Graduate Directory</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
-                    ...
+                    <h6>Summary</h6>
+                    <div class="modal-summary">
+                      <p>A platform to help CYF graduates connect with potential employers</p>
+                      <p><strong>Tech Stack:</strong> React, Node.js, Oauth2, postgreSQL</p>
+                    </div>
+                    
+                    <di class="modal-links">
+                      <a href="https://dev-graduate-directory.herokuapp.com/" target="_blank"><strong>Demo</strong></a>
+                      <a href="https://github.com/OBakir90/cyf-final-project-pgsql-starter-kit/tree/develop" target="_blank"><strong>GitHub Repo</strong></a>
+                    </di>
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -121,15 +131,113 @@
                 </div>
               </div>
             </div>
+        
+            </div><!-- project directory ending-->    
 
+            <div class="project-modal-one" ><!--project Tvmaze-->
+              <img class="img-fluid" src="./images/tv-dom.png" data-bs-toggle="modal" data-bs-target="#domProject" alt="project 2 screencap" >
+              <p><strong>TV Shows Episode Guide</strong></p>
+              
+        
+            <!-- Modal -->
+            <div class="modal fade" id="domProject" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" style="margin-top:120px;">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h6>Summary</h6>
+                    <div class="modal-summary">
+                      <p>A TV shows episode guide using javascript DOM manupulation</p>
+                      <p><strong>Tech Stack:</strong> JavaScript, HTML, CSS</p>
+                    </div>
+                    
+                    <di class="modal-links">
+                      <a href="https://cyf-farhanafkhan-tv.netlify.app/" target="_blank"><strong>Demo</strong></a>
+                      <a href="https://github.com/FarhanaFKhan/tv-show-dom-project" target="_blank"><strong>GitHub Repo</strong></a>
+                    </di>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
             </div>
-            
-            
-          </div>
-          <!-- <div class="col-6 col-md-4">.col-6 .col-md-4</div> -->
-          
-            
+        
+            </div><!-- project TVmaze ending-->    
 
+            <div class="project-modal-one"><!--project journal-->
+              <img class="img-fluid" src="./images/graduate-directory.png" data-bs-toggle="modal" data-bs-target="#exampleModal" alt="project 1 screencap" >
+              <p><strong>CYF Graduate Directory</strong></p>
+              
+        
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" style="margin-top:120px;">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">CYF Graduate Directory</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h6>Summary</h6>
+                    <div class="modal-summary">
+                      <p>A platform to help CYF graduates connect with potential employers</p>
+                      <p><strong>Tech Stack:</strong> React, Node.js, Oauth2, postgreSQL</p>
+                    </div>
+                    
+                    <di class="modal-links">
+                      <a href="https://dev-graduate-directory.herokuapp.com/" target="_blank"><strong>Demo</strong></a>
+                      <a href="https://github.com/OBakir90/cyf-final-project-pgsql-starter-kit/tree/develop" target="_blank"><strong>GitHub Repo</strong></a>
+                    </di>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            </div><!-- project journal ending-->    
+
+            <div class="project-modal-one"><!--project directory-->
+              <img class="img-fluid" src="./images/graduate-directory.png" data-bs-toggle="modal" data-bs-target="#exampleModal" alt="project 1 screencap" >
+              <p><strong>CYF Graduate Directory</strong></p>
+              
+        
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" style="margin-top:120px;">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">CYF Graduate Directory</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h6>Summary</h6>
+                    <div class="modal-summary">
+                      <p>A platform to help CYF graduates connect with potential employers</p>
+                      <p><strong>Tech Stack:</strong> React, Node.js, Oauth2, postgreSQL</p>
+                    </div>
+                    
+                    <di class="modal-links">
+                      <a href="https://dev-graduate-directory.herokuapp.com/" target="_blank"><strong>Demo</strong></a>
+                      <a href="https://github.com/OBakir90/cyf-final-project-pgsql-starter-kit/tree/develop" target="_blank"><strong>GitHub Repo</strong></a>
+                    </di>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            </div><!-- project directory ending-->    
+          </div>
+            
+          
         </section>
       
         
@@ -143,6 +251,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js' type='text/javascript'></script>
    
 </body>
 </html>
+
