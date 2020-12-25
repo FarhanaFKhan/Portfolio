@@ -171,6 +171,10 @@ body{
   background-color:#bbb;
   color: black;
 }
+.flip-card-front img{
+  width:500px;
+  height:300px;
+}
 
 .flip-card-email{
   display: flex;
@@ -258,5 +262,46 @@ footer{
       margin: 100px 0px 0px 175px;
     }
 
+
+}
+
+@media (max-width:450px){
+  #skills{
+    margin-left:0px;
+  }
+  #skills h2{
+    margin-left: 0px;
+  }
+
+  .projects-heading h2{
+    margin-left: 50px;
+  }
+  .projects-heading p{
+    margin-left:30px;
+  }
+
+  .project-container{
+    margin-left:0px;
+  }
+
+  #contact h2{
+    margin-left:125px;
+  }
+
+  .flip-card{
+    margin-left: 10px;
+    width:375px;
+    height: 225px;
+  }
+
+  .flip-card-front img{
+    width:375px;
+    height:225px;
+  }
+
+
+  footer{
+    margin: 100px 0px 0px 50px;
+  }
 
 }
