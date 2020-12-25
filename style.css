@@ -78,10 +78,13 @@ body{
  
 }
 
-#projects h2{
-  /* text-align: center; */
+.projects-heading h2{
   margin: 50px 0px 0px 530px;
   letter-spacing: 2px;
+
+}
+.projects-heading p{
+  margin-left: 450px; margin-top: 15px;
 }
 
 .project-container{
@@ -94,20 +97,20 @@ body{
 }
 
 
-.project-modal-one{
+.project-modal{
   margin-top:50px;
   
 }
-.project-modal-one img{
+.project-modal img{
   border: 1px solid black;
   margin-top:10px;
 }
 
-.project-modal-one img:hover{
+.project-modal img:hover{
   box-shadow: 10px 10px lightgrey;
 }
 
-.project-modal-one p{
+.project-modal p{
   margin-top:10px;
   margin-left:100px; 
 }
@@ -130,17 +133,17 @@ body{
 }
 
 #contact h2{
-  margin: 0px 0px 0px 530px;
+  margin-left:530px;
   letter-spacing: 2px;
 }
 
 .flip-card {
   background-color: transparent;
-  width: 650px;
+  width: 500px;
   height: 300px;
   border: 1px solid #f1f1f1;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  margin: 80px 0px 0px 300px;
+  margin: 80px 0px 0px 370px;
 }
 
 .flip-card-inner {
@@ -165,14 +168,49 @@ body{
 }
 
 .flip-card-front {
-  background-color:rgb(152, 255, 152);;
+  background-color:#bbb;
   color: black;
 }
 
+.flip-card-email{
+  display: flex;
+  margin-top:15px;
+  margin-left:120px;
+}
+
+.flip-card-email p{
+  margin-left:15px;
+}
+
+.flip-card-github{
+  display:flex;
+  margin-left:120px;
+  margin-top: 15px;
+}
+
+.flip-card-github a{
+  color: white;
+  margin-left: 15px;
+}
+
+.flip-card-linkedin{
+  display: flex;
+  margin-left:120px;
+  margin-top:20px;
+}
+.flip-card-linkedin a{
+  color: white;
+  margin-left: 15px;
+}
+
 .flip-card-back {
-  background-color: dodgerblue;
+  background-image:linear-gradient(to right, rgb(228, 177, 221), rgb(31, 27, 31));
   color: white;
   transform: rotateY(180deg);
+}
+
+footer{
+  margin: 100px 0px 0px 450px;
 }
 
 
@@ -182,21 +220,43 @@ body{
 
 @media (max-width:767px){
     .photo{
-        height:100%;
-        width:100%;
-        margin-left: 100px;
+      height:100%;
+      width:100%;
+      margin-left: 100px;
     }
+    
+    #skills{
+      margin-left:30px;
+    }
+    #skills h2{
+      margin-left: 25px;
+    }
+
+    .projects-heading h2{
+      margin-left: 260px;
+    }
+
+    .projects-heading p{
+      margin-left:170px;
+    }
+
     .project-container{
       display: block;
       flex-direction: column;
-  }
+      margin-left: 100px;
+    }
+
+    #contact h2{
+      margin-left:225px;
+    }
+
+    .flip-card{
+      margin-left: 100px;
+    }
+
+    footer{
+      margin: 100px 0px 0px 175px;
+    }
+
 
 }
-/* @media (min-width:850px){
-    
-    
-  .project-container{
-      display: flex;
-      flex-direction: row;
-  }
-} */
